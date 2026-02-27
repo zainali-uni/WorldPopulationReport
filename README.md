@@ -4,10 +4,10 @@
 This system generates population reports using C#, MySQL, Docker, and GitHub.
 
 ## Team Members
-- Ali – Product Owner
-- Ahmed – Scrum Master
-- Sara – Backend Developer
-- Fatima – Backend Developer
+- Zain – Product Owner
+- Ali – Scrum Master
+- zain-ul – Backend Developer
+- Adeel – Backend Developer
 
 ## Technologies Used
 - C# (.NET 8)
