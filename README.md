@@ -9,33 +9,43 @@ This system generates population reports using C#, MySQL, Docker, and GitHub.
 - zain-ul – Backend Developer
 - Adeel – Backend Developer
 
+---
+
 ## Technologies Used
+
 - C# (.NET 8)
 - MySQL
 - Docker
 - GitHub Actions
+- GitFlow Branching Strategy
 
-## Features
-- Countries ordered by population
-- Cities ordered by population
-- Capital cities report
-- Top N reports
-- Population breakdown
-- Language statistics
+---
 
-## How to Run
+## Project Structure
 
-docker compose up --build -d
+- /db → Contains world.sql database file
+- docker-compose.yml → Runs MySQL and C# application
+- dockerfile → Builds .NET application container
+- Program.cs → Main application logic
 
-docker exec -it reportapp-app-1 /bin/bash
-dotnet ReportApp.dll
+---
+
+## How to Run the Project
+
+1. Clone the repository
+2. Run:
+   docker compose up --build -d
+3. Enter container:
+   docker exec -it reportapp-app-1 /bin/bash
+4. Run the application:
+   dotnet WorldPopulationReport.dll
+
+---
 
 ## Branching Strategy
-We are following GitFlow:
-- main
-- develop
-- feature/*
-- release/*
 
-## First Release
-v1.0 – Initial working version
+We used GitFlow workflow:
+- main → Production-ready code
+- develop → Integration branch
+- feature branches → Individual feature development
+- release branch → Final version preparation
